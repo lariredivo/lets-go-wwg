@@ -14,8 +14,6 @@ func main() {
 	anoAtual := time.Now().Year()
 	idade := anoAtual - anoNascimento
 
-	fmt.Scan()
-
 	fmt.Println(idade)
 
 }
