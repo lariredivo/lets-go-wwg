@@ -193,3 +193,59 @@ func main() {
 		fmt.Printf("%d) %s\n", indice+1, value)
 	}
 }
+
+//Function
+package main
+
+import (
+	"fmt"
+)
+var nome = "Leslie Knope"
+
+func main() {
+	Cumprimento(nome)
+}
+
+func Cumprimento(nome string) {	
+	fmt.Printf("Olá %s! boa tarde", nome)
+}
+
+//nova function
+var nome = "Leslie Knope"
+var hora = 10
+
+func main() {
+	cumprimento := GereCumprimento(nome, hora)
+	fmt.Println(cumprimento)
+}
+
+func GereCumprimento(nome string, hora int) string {
+	cumprimento := ""
+	switch {
+	case hora >= 6 && hora < 12:
+		cumprimento = "bom dia"
+	case hora >= 12 && hora < 18:
+		cumprimento = "boa tarde"
+	case hora >= 18 && hora < 24:
+		cumprimento = "boa noite"
+	case hora >= 0 && hora < 6:
+		cumprimento = "boa madrugada"
+	default:
+		cumprimento = "olar"
+	}
+
+	frase := fmt.Sprintf("%s, %s!", cumprimento, nome)
+	return frase
+}
+
+//function soma
+func main() {
+	//Dado um número A e um número B, escreva uma função que some ambos e retorne a soma
+		soma := Some(4, 69)
+		fmt.Println(soma)
+	}
+	
+	func Some(a, b int) int {
+		return a + b
+	}
+	
