@@ -122,4 +122,74 @@ func main() {
 	default:
 		fmt.Println("Valor informado não é válido")
 	}
+	//Laços de repetição (https://womenwhogocwb.gitbook.io/letsgo/lacos-de-repeticao/conteudo)
+func main() {
+	for i := 0; i <= 10; i++ {
+		fmt.Println(i)
+	}
+}
+
+//Exercicio 1 - Utilizando a estrutura for, printe na tela os números inteiros de 13 a 27 (inclusive).(https://womenwhogocwb.gitbook.io/letsgo/lacos-de-repeticao/exercicios)
+func main() {
+	for i := 13; i <= 27; i++ {
+		fmt.Println(i)
+	}
+}
+
+//outra forma do exemplo de cima (similar ao while)
+func main() {
+	i := 13
+	for i <= 27 {
+		fmt.Println(i)
+		i++
+	}	
+}
+
+//Exercicio 2 - Utilizando uma sintaxe da estrutura for diferente da usada no exercício acima, printe na tela todas as horas do dia (usando o formato de 24 horas).
+func main() {
+	hora := 0
+	for hora <= 24 {
+		fmt.Printf("%.2d:00\n", hora)
+		hora++
+	}	
+}
+
+//Exercicio 3 - Utilizando a resolução anterior, demonstre também todos os minutos de um dia (formato 24 horas).
+func main() {
+	hora := 0
+	for hora < 24 {
+		for minuto := 0; minuto < 60; minuto++ {
+			fmt.Printf("%.2d:%.2d\n", hora, minuto)
+		}
+		hora++
+	}
+}
+
+//Usando a função "for", printe na tela tofos os segundos de 00:00:00 até 02:59:59
+func main() {
+	hora := 0
+	for hora < 3 {
+		for minuto := 0; minuto < 60; minuto++ {
+			for segundo := 0; segundo < 60; segundo++ {
+				fmt.Printf("%.2d:%.2d:%.2d\n", hora, minuto, segundo)
+				}
+		}
+		hora++
+	}
+}
+
+//for range
+func main() {
+	var fatia = []string{"zero", "um", "dois", "três", "quatro"}
+	for indice, value := range fatia {
+		fmt.Println(indice, value)
+	}
+}
+
+//Dada uma slice de string que representa uma lista de mercado, use o for range para percorrê-la e printe na tela cada um dos itens de cmpra ao lado da sua ordem de inserção na lista
+func main() {
+	var listaDeCompras = []string{"abacate", "sabonete", "azeite", "tomate", "banana"}
+	for indice, value := range listaDeCompras { 
+		fmt.Printf("%d) %s\n", indice+1, value)
+	}
 }
