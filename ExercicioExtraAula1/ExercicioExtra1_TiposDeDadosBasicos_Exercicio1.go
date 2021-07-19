@@ -1,4 +1,3 @@
-
 //Exercício Extra 1 (https://womenwhogocwb.gitbook.io/letsgo/tipos-de-dados-basicos/exercicios-extras)
 
 package main
