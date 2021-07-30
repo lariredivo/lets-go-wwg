@@ -1,0 +1,2 @@
+//Exercício #04
+//Crie duas funções, uma que receba uma string e retorne uma nova string alterando cada caractere para o terceiro caractere seguinte, e outra que reverta esse processo. Exemplo, o caractere “a” viraria “d”.
